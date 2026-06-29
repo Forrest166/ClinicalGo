@@ -1,0 +1,67 @@
+{
+  "row_count": 10550,
+  "source_files": [
+    "Step2C_population_standardized_output.xlsx"
+  ],
+  "non_empty_indication": 8437,
+  "non_empty_intervention": 10127,
+  "non_empty_comparator": 9521,
+  "non_empty_severity": 2888,
+  "sample_size_median": 104.0,
+  "sample_size_max": 53480.0,
+  "follow_up_median_months": 3.5,
+  "follow_up_q3_months": 12.0,
+  "follow_up_max_months": 3744.0,
+  "severity_mapped_rows": 1982,
+  "severity_retained_text_rows": 906,
+  "population_coverage": {
+    "age": 3651,
+    "gender": 835,
+    "ethnicity": 344,
+    "occupation": 323,
+    "social_status": 1133,
+    "treatment_history": 95
+  },
+  "intervention_clusters": [
+    {
+      "cluster": 0,
+      "row_count": 141,
+      "top_terms": "rtms, sham, rtms sham, rtms rtms, itbs, intervention, antidepressant, placebo, enacarbil, enable"
+    },
+    {
+      "cluster": 1,
+      "row_count": 777,
+      "top_terms": "mg, placebo, day, mg placebo, mg day, day placebo, mg kg, kg, ir, er"
+    },
+    {
+      "cluster": 2,
+      "row_count": 881,
+      "top_terms": "control, exercise control, exercise, intervention control, attention, attention control, training control, intervention, training, education control"
+    },
+    {
+      "cluster": 3,
+      "row_count": 414,
+      "top_terms": "cbt, cbt waitlist, waitlist, cbt cbt, cbt education, cbt control, education, cbt placebo, control, cbt intervention"
+    },
+    {
+      "cluster": 4,
+      "row_count": 6085,
+      "top_terms": "placebo, waitlist, intervention, exercise, therapy, education, sham, training, sertraline, escitalopram"
+    },
+    {
+      "cluster": 5,
+      "row_count": 1399,
+      "top_terms": "usual care, usual, care, cbt usual, exercise usual, cbt, intervention usual, exercise, intervention, care usual"
+    },
+    {
+      "cluster": 6,
+      "row_count": 252,
+      "top_terms": "standard, standard care, care, care standard, cbt standard, intervention standard, intervention, therapy standard, program standard, cbt"
+    },
+    {
+      "cluster": 7,
+      "row_count": 199,
+      "top_terms": "placebo, placebo placebo, waitlist, intervention, epidural, endurance, endotoxin, enacarbil, enable, en gastric"
+    }
+  ]
+}

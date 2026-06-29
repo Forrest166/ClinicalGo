@@ -1,0 +1,17 @@
+﻿Disease Subtype,Behavioral,Biological,Combination Product,Device,Diagnostic Test,Dietary Supplement,Drug,Other,Procedure,Radiation
+Anxiety/comorbid anxiety,529,1,96,20,6,35,116,53,13,1
+Bipolar depression,50,5,25,14,0,14,107,13,3,5
+Cancer-related,339,1,47,4,19,17,39,54,22,4
+Depression generic,1463,40,387,185,56,187,884,270,69,42
+HIV/infectious,74,0,8,1,1,2,15,20,3,0
+MDD,374,11,137,85,21,75,519,66,20,14
+Metabolic/cardiopulmonary,280,3,58,6,20,32,40,75,36,0
+Neurocognitive/neurodegenerative,183,0,35,23,8,12,36,27,19,1
+PTSD/trauma,269,3,47,13,5,2,40,20,2,2
+Pain/fibromyalgia,159,0,52,47,4,5,53,23,59,1
+Peripartum/postpartum depression,84,4,3,1,2,17,11,14,3,0
+Psychosis/schizophrenia,43,0,8,7,0,21,66,18,1,2
+Sleep/insomnia,108,3,17,17,3,3,41,8,12,0
+Substance use,113,0,32,6,3,9,59,27,6,0
+Treatment-resistant depression,14,5,9,29,1,2,80,3,3,18
+Unclassified,1900,106,493,161,76,276,606,333,232,5
