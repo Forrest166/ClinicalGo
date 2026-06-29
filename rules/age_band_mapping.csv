@@ -1,0 +1,68 @@
+term_key,observed_count,rule_type,stage_major,stage_detail,normalized_stage,age_min_years,age_max_years,dist_family,dist_mean_years,dist_sd_years,confidence,normalization_action,notes
+adults,1083,broad_stage,Adult,,Adult,18.0,64,truncnorm,41.0,12.0,medium,cautious_map,High-frequency broad adult label; do not over-narrow to 26-44
+adult,150,broad_stage,Adult,,Adult,18.0,64,truncnorm,41.0,12.0,medium,cautious_map,Singular adult label; same handling as adults
+older adults,238,broad_stage,Adult,OlderAdult,Adult-OlderAdult,60.0,79,truncnorm,69.0,6.0,medium,cautious_map,Broad older-adult label; literature often mixes 60+ and 65+
+older adult,3,broad_stage,Adult,OlderAdult,Adult-OlderAdult,60.0,79,truncnorm,69.0,6.0,medium,cautious_map,Singular variant of older adults
+older persons,7,broad_stage,Adult,OlderAdult,Adult-OlderAdult,60.0,79,truncnorm,69.0,6.0,medium,cautious_map,Broad older-person label
+older people,1,broad_stage,Adult,OlderAdult,Adult-OlderAdult,60.0,79,truncnorm,69.0,6.0,medium,cautious_map,Broad older-people label
+older participants,1,broad_stage,Adult,OlderAdult,Adult-OlderAdult,60.0,79,truncnorm,69.0,6.0,medium,cautious_map,Broad older-participants label
+older age cohort,1,broad_stage,Adult,OlderAdult,Adult-OlderAdult,60.0,79,truncnorm,69.0,6.0,medium,cautious_map,Broad older-age-cohort label
+elders,1,broad_stage,Adult,OlderAdult,Adult-OlderAdult,60.0,79,truncnorm,70.0,7.0,low,cautious_map,Common older-age synonym; slightly vaguer than older adults
+older,25,contextual_stage,Contextual,Older,Contextual-Older,60.0,85,normal,72.0,8.0,low,cautious_map,Too vague to force to one older-adult bucket
+adolescents,191,direct_stage,Adolescent,,Adolescent,13.0,17,truncnorm,15.5,1.5,high,direct_map,Direct life-course stage
+adolescent,21,direct_stage,Adolescent,,Adolescent,13.0,17,truncnorm,15.5,1.5,high,direct_map,Singular variant of adolescents
+late adolescent,1,direct_stage,Adolescent,LateAdolescent,Adolescent-LateAdolescent,16.0,19,truncnorm,17.5,1.0,medium,direct_map,Late adolescent wording
+teen,2,direct_stage,Adolescent,,Adolescent,13.0,19,truncnorm,16.0,2.0,medium,direct_map,Teen wording is slightly broader than adolescent
+children,102,broad_stage,Child,,Child,3.0,12,truncnorm,8.0,3.0,medium,cautious_map,Do not over-narrow to school-age only
+schoolchildren,2,direct_stage,Child,SchoolAge,Child-SchoolAge,6.0,12,truncnorm,9.0,2.0,high,direct_map,Direct school-age wording
+school-age,1,direct_stage,Child,SchoolAge,Child-SchoolAge,6.0,12,truncnorm,9.0,2.0,high,direct_map,Direct school-age wording
+grade 6 students,1,education_proxy,Child,SchoolAge,Child-SchoolAge,11.0,12,normal,11.5,0.5,medium,cautious_map,Education proxy; usually early secondary / late primary depending system
+year 8 students,2,education_proxy,Adolescent,,Adolescent,12.0,14,normal,13.0,0.8,medium,cautious_map,Education proxy; approximate school-system assumption
+9th grade students,1,education_proxy,Adolescent,,Adolescent,14.0,15,normal,14.5,0.5,medium,cautious_map,Education proxy; grade-linked age assumption
+secondary school students,1,education_proxy,Adolescent,,Adolescent,12.0,18,normal,15.0,1.8,medium,cautious_map,Education proxy; broad secondary-school band
+high school students,1,education_proxy,Adolescent,,Adolescent,14.0,18,normal,16.0,1.2,medium,cautious_map,Education proxy; approximate high-school band
+preschool children,1,direct_stage,Child,Preschool,Child-Preschool,3.0,5,truncnorm,4.0,0.8,high,direct_map,Direct preschool wording
+juvenile,2,contextual_stage,Contextual,Juvenile,Contextual-Juvenile,10.0,17,normal,13.5,2.5,low,cautious_map,Juvenile is context-sensitive and should stay broad
+infants,5,direct_stage,Child,Infant,Child-Infant,0.08,1,truncnorm,0.5,0.25,high,direct_map,Infant wording in years
+infants/toddlers,1,mixture,Mixed,Infant+Toddler,Mixed-Infant+Toddler,0.0,3,mixture,1.5,0.8,medium,cautious_map,Mixed early-childhood group
+newborn,1,direct_stage,Child,Neonate,Child-Neonate,0.0,0.08,truncnorm,0.04,0.02,high,direct_map,Direct neonatal wording
+newborns,1,direct_stage,Child,Neonate,Child-Neonate,0.0,0.08,truncnorm,0.04,0.02,high,direct_map,Plural neonatal wording
+neonates,1,direct_stage,Child,Neonate,Child-Neonate,0.0,0.08,truncnorm,0.04,0.02,high,direct_map,Direct neonatal wording
+six-week-old,1,direct_stage,Child,Infant,Child-Infant,0.115,0.115,fixed,0.115,0.01,high,direct_map,Specific age phrase converted to years
+prepubertal,1,contextual_stage,Contextual,Prepubertal,Contextual-Prepubertal,6.0,11,truncnorm,8.5,1.5,medium,cautious_map,Biological stage proxy rather than exact age
+youth,19,contextual_stage,Mixed,Adolescent+YoungAdult,Mixed-Adolescent+YoungAdult,13.0,25,normal,19.0,3.5,low,cautious_map,Commonly spans adolescent through emerging adult
+youths,2,contextual_stage,Mixed,Adolescent+YoungAdult,Mixed-Adolescent+YoungAdult,13.0,25,normal,19.0,3.5,low,cautious_map,Plural variant of youth
+young adults,23,direct_stage,Adult,YoungAdult,Adult-YoungAdult,18.0,25,truncnorm,21.5,2.0,high,direct_map,Direct young-adult wording
+young adult,3,direct_stage,Adult,YoungAdult,Adult-YoungAdult,18.0,25,truncnorm,21.5,2.0,high,direct_map,Singular young-adult wording
+emerging adults,3,direct_stage,Adult,YoungAdult,Adult-YoungAdult,18.0,25,truncnorm,21.5,2.0,high,direct_map,Emerging-adult wording
+students,17,education_proxy,Contextual,EducationProxy,Contextual-EducationProxy,18.0,25,normal,21.0,2.5,medium,cautious_map,Generic student wording; stable but not truly age-specific
+college students,5,education_proxy,Contextual,EducationProxy,Contextual-EducationProxy,18.0,24,normal,20.5,1.5,medium,cautious_map,Education proxy
+college aged,3,education_proxy,Contextual,EducationProxy,Contextual-EducationProxy,18.0,24,normal,20.5,1.5,medium,cautious_map,Education/setting proxy
+college-aged,1,education_proxy,Contextual,EducationProxy,Contextual-EducationProxy,18.0,24,normal,20.5,1.5,medium,cautious_map,Hyphenated variant
+college,2,education_proxy,Contextual,EducationProxy,Contextual-EducationProxy,18.0,24,normal,20.5,1.5,low,cautious_map,Too terse to be high confidence
+university students,2,education_proxy,Contextual,EducationProxy,Contextual-EducationProxy,18.0,25,normal,21.5,2.0,medium,cautious_map,Education proxy
+undergraduate students,5,education_proxy,Contextual,EducationProxy,Contextual-EducationProxy,18.0,24,normal,20.5,1.5,medium,cautious_map,Education proxy
+undergraduates,5,education_proxy,Contextual,EducationProxy,Contextual-EducationProxy,18.0,24,normal,20.5,1.5,medium,cautious_map,Education proxy
+postsecondary,1,education_proxy,Contextual,EducationProxy,Contextual-EducationProxy,17.0,25,normal,20.5,2.0,medium,cautious_map,Education-system proxy
+freshmen,1,education_proxy,Contextual,EducationProxy,Contextual-EducationProxy,18.0,20,normal,18.8,0.8,medium,cautious_map,Education proxy; first-year college assumption
+first-year college students,2,education_proxy,Contextual,EducationProxy,Contextual-EducationProxy,18.0,20,normal,18.8,0.8,medium,cautious_map,Education proxy; first-year college assumption
+first-year osteopathic medical students,1,education_proxy,Contextual,EducationProxy,Contextual-EducationProxy,21.0,28,normal,24.0,1.8,medium,cautious_map,Older student subgroup; medical-school context
+university,1,education_proxy,Contextual,EducationProxy,Contextual-EducationProxy,18.0,25,normal,21.5,2.0,low,cautious_map,Very terse education proxy
+young,7,contextual_stage,Contextual,Young,Contextual-Young,13.0,30,normal,21.0,5.0,low,cautious_map,Too vague to force to one stage
+middle-aged,9,direct_stage,Adult,MiddleAged,Adult-MiddleAged,45.0,64,truncnorm,54.0,5.0,high,direct_map,Direct middle-aged wording
+midlife,1,direct_stage,Adult,MiddleAged,Adult-MiddleAged,45.0,64,truncnorm,54.0,5.0,high,direct_map,Midlife synonym
+working age,4,contextual_stage,Contextual,WorkingAge,Contextual-WorkingAge,18.0,64,normal,41.0,12.0,low,cautious_map,Contextual adult band; broad labor-force term
+childbearing age,2,contextual_stage,Contextual,ChildbearingAge,Contextual-ChildbearingAge,18.0,45,normal,31.0,7.0,low,cautious_map,Sex-specific contextual age term
+perimenopausal,1,contextual_stage,Contextual,MenopausalTransition,Contextual-MenopausalTransition,45.0,55,normal,50.0,3.0,low,cautious_map,Biological transition proxy
+climacteric,1,contextual_stage,Contextual,MenopausalTransition,Contextual-MenopausalTransition,45.0,55,normal,50.0,3.0,low,cautious_map,Biological transition proxy
+late-life,2,contextual_stage,Adult,LateLife,Adult-LateLife,65.0,85,normal,74.0,6.0,low,cautious_map,Broad late-life wording
+late-life adults,1,contextual_stage,Adult,LateLife,Adult-LateLife,65.0,85,normal,74.0,6.0,medium,cautious_map,Late-life phrase with adult anchor
+nonagenarians,1,direct_stage,Adult,Nonagenarian,Adult-Nonagenarian,90.0,99,truncnorm,94.0,2.0,high,direct_map,Direct late-life stage
+children and adolescents,9,mixture,Mixed,Child+Adolescent,Mixed-Child+Adolescent,6.0,17,mixture,11.5,3.2,low,cautious_map,Two adjacent life-course groups combined
+child and adolescent,2,mixture,Mixed,Child+Adolescent,Mixed-Child+Adolescent,6.0,17,mixture,11.5,3.2,low,cautious_map,Singular/plural variant of mixed child-adolescent group
+adolescents and young adults,5,mixture,Mixed,Adolescent+YoungAdult,Mixed-Adolescent+YoungAdult,13.0,25,mixture,19.0,3.5,low,cautious_map,AYA-style combined group
+"young adults, older adults, older adults with cvrf",1,mixture,Mixed,YoungAdult+OlderAdult,Mixed-YoungAdult+OlderAdult,18.0,85,mixture,65.0,18.0,very_low,manual_review,Multi-cohort wording with additional disease-risk qualifier
+"younger-age cohorts, older adults",1,mixture,Mixed,Younger+Older,Mixed-Younger+Older,,,manual_review,,,very_low,manual_review,Needs manual review; cohort wording is too underspecified
+adolescents and parents,1,contaminated_mixture,Mixed,Adolescent+Adult_Role,Mixed-Adolescent+Adult_Role,, ,manual_review,,,very_low,manual_review,Age term contaminated by non-age role group
+children and teachers,1,contaminated_mixture,Mixed,Child+Adult_Role,Mixed-Child+Adult_Role,, ,manual_review,,,very_low,manual_review,Age term contaminated by non-age role group
+early-onset,2,noise,Noise,NonAge,Noise-NonAge,, ,manual_review,,,very_low,manual_review,Disease-course descriptor rather than age term

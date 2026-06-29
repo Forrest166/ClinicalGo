@@ -1,0 +1,43 @@
+{
+  "age": {
+    "stored_as": "[Mean_Age,SD_Age,Min_Age,Max_Age,Age_N]",
+    "column": "Age [Mean_Age,SD_Age,Min_Age,Max_Age,N]",
+    "missing_slot_value": 0,
+    "error_rule": "mark error when age text indicates infant/newborn/neonate or mapped/reported max age is below 1 year",
+    "no_imputation_rule": "do not derive mean or SD from ranges, and do not derive min or max from mean/SD"
+  },
+  "gender": {
+    "stored_as": "male proportion decimal in [0,1] without percent sign",
+    "column": "Gender Male Proportion"
+  },
+  "ethnicity": {
+    "stored_as": "[A,B,C,D,E,F]",
+    "column": "Ethnicity [A=<label>,B=<label>,C=<label>,D=<label>,E=<label>,F=<label>]",
+    "precision": 2,
+    "notes": "A-F correspond to the six most frequent normalized ethnicity labels in the current dataset"
+  },
+  "occupation": {
+    "stored_as": "single standardized occupation label or label list",
+    "column": "Occupation"
+  },
+  "social_status": {
+    "stored_as": "single code or code list string such as [1,2]",
+    "column": "Social Status"
+  },
+  "follow_up_time": {
+    "stored_as": "months only, numeric string, 2 decimals",
+    "column": "Follow-up Time (Months)"
+  },
+  "severity": {
+    "stored_as": "single code, code list string such as [2,1], or original text when unmapped",
+    "column": "Severity"
+  },
+  "sample_size": {
+    "stored_as": "single numeric string",
+    "column": "Sample Size"
+  },
+  "treatment_history": {
+    "stored_as": "original text carried from Step2B",
+    "column": "Treatment History"
+  }
+}

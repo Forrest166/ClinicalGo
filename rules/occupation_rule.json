@@ -1,0 +1,9 @@
+{
+  "stored_as": "single standardized occupation label or label list",
+  "column": "Occupation",
+  "code_source": "rules/occupation_codebook.csv",
+  "notes": [
+    "Occupation stores work, profession, or student identity only.",
+    "Pregnancy, HIV, low-income, caregiver status, and treatment history do not belong in occupation."
+  ]
+}

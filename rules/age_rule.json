@@ -1,0 +1,13 @@
+{
+  "stored_as": "[Mean_Age,SD_Age,Min_Age,Max_Age,Age_N]",
+  "column": "Age [Mean_Age,SD_Age,Min_Age,Max_Age,N]",
+  "missing_slot_value": 0,
+  "mapping_source": "rules/age_band_mapping.csv",
+  "notes": [
+    "Numeric ages are normalized into years.",
+    "Descriptor ages are mapped to min/max age bands through rules/age_band_mapping.csv.",
+    "Do not infer mean or SD from an age range.",
+    "Do not infer min or max from mean/SD.",
+    "If an infant or age below 1 year is detected, set Age Error to error."
+  ]
+}

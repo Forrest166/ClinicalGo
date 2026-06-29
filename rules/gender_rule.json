@@ -1,0 +1,12 @@
+{
+  "target_metric": "male proportion",
+  "output_range": [0.0, 1.0],
+  "precision": 2,
+  "rules": [
+    {"input": "X% male", "output": "X / 100"},
+    {"input": "X% female", "output": "1 - (X / 100)"},
+    {"input": "Male", "output": 1.0},
+    {"input": "Female", "output": 0.0},
+    {"input": "Male + Female without percentages", "output": ""}
+  ]
+}

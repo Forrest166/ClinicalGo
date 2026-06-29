@@ -1,0 +1,9 @@
+{
+  "stored_as": "original text carried from Step2B",
+  "column": "Treatment History",
+  "standardization": "none in Step2C",
+  "notes": [
+    "Treatment history remains independent from Social Status.",
+    "Do not assign Step2C numeric codes unless a future modeling step explicitly requests them."
+  ]
+}

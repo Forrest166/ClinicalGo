@@ -1,0 +1,36 @@
+{
+  "codes": {
+    "mild": 1,
+    "moderate": 2,
+    "severe": 3
+  },
+  "storage": "single code, code list such as [2,1], or original text when unmapped",
+  "phrase_rules": [
+    {"pattern": "\\bmild\\s*(?:to|-|/)\\s*moderate\\b|\\bmild\\s*\\|\\|\\s*moderate\\b", "codes": [2, 1], "meaning": "mild-to-moderate"},
+    {"pattern": "\\bmoderate\\s*(?:to|-|/)\\s*severe\\b|\\bmoderate\\s*\\|\\|\\s*severe\\b", "codes": [3, 2], "meaning": "moderate-to-severe"},
+    {"pattern": "\\bmild\\s*(?:to|-|/)\\s*severe\\b", "codes": [3, 2, 1], "meaning": "mild-to-severe"}
+  ],
+  "scale_rules": [
+    {"pattern": "\\bPHQ-?9\\b[^\\n;|]{0,40}(?:>=|>|score\\s*>?=?)\\s*(?:20|2[0-7])\\b", "codes": [3], "meaning": "PHQ-9 severe threshold"},
+    {"pattern": "\\bPHQ-?9\\b[^\\n;|]{0,40}>\\s*9\\b", "codes": [3, 2], "meaning": "PHQ-9 greater than mild cutoff"},
+    {"pattern": "\\bPHQ-?9\\b[^\\n;|]{0,40}(?:>=|>|score\\s*>?=?)\\s*(?:10|1[0-9])\\b", "codes": [3, 2], "meaning": "PHQ-9 at least moderate threshold"},
+    {"pattern": "\\bPHQ-?9\\b[^\\n;|]{0,40}>\\s*4\\b", "codes": [3, 2, 1], "meaning": "PHQ-9 greater than minimal cutoff"},
+    {"pattern": "\\bPHQ-?9\\b[^\\n;|]{0,40}(?:>=|>|score\\s*>?=?)\\s*(?:5|[6-9])\\b", "codes": [3, 2, 1], "meaning": "PHQ-9 at least mild threshold"},
+    {"pattern": "\\b(?:HDRS|HRSD|HAM-?D|HAMD)(?:-?17)?\\b[^\\n;|]{0,40}(?:>=|>|score\\s*>?=?)\\s*(?:24|2[4-9]|[3-6][0-9])\\b", "codes": [3], "meaning": "HAM-D/HDRS severe threshold"},
+    {"pattern": "\\b(?:HDRS|HRSD|HAM-?D|HAMD)(?:-?17)?\\b[^\\n;|]{0,40}>\\s*16\\b", "codes": [3, 2], "meaning": "HAM-D/HDRS greater than mild cutoff"},
+    {"pattern": "\\b(?:HDRS|HRSD|HAM-?D|HAMD)(?:-?17)?\\b[^\\n;|]{0,40}(?:>=|>|score\\s*>?=?)\\s*(?:17|18|19|20|21|22|23)\\b", "codes": [3, 2], "meaning": "HAM-D/HDRS at least moderate threshold"},
+    {"pattern": "\\b(?:HDRS|HRSD|HAM-?D|HAMD)(?:-?17)?\\b[^\\n;|]{0,40}>\\s*7\\b", "codes": [3, 2, 1], "meaning": "HAM-D/HDRS greater than normal cutoff"},
+    {"pattern": "\\b(?:HDRS|HRSD|HAM-?D|HAMD)(?:-?17)?\\b[^\\n;|]{0,40}(?:>=|>|score\\s*>?=?)\\s*(?:8|9|10|11|12|13|14|15|16)\\b", "codes": [3, 2, 1], "meaning": "HAM-D/HDRS at least mild threshold"},
+    {"pattern": "\\bMADRS\\b[^\\n;|]{0,40}(?:>=|>|score\\s*>?=?)\\s*(?:30|3[0-9]|[4-6][0-9])\\b", "codes": [3], "meaning": "MADRS severe threshold"},
+    {"pattern": "\\bMADRS\\b[^\\n;|]{0,40}>\\s*19\\b", "codes": [3, 2], "meaning": "MADRS greater than mild cutoff"},
+    {"pattern": "\\bMADRS\\b[^\\n;|]{0,40}(?:>=|>|score\\s*>?=?)\\s*(?:20|2[0-9])\\b", "codes": [3, 2], "meaning": "MADRS at least moderate threshold"},
+    {"pattern": "\\bMADRS\\b[^\\n;|]{0,40}>\\s*6\\b", "codes": [3, 2, 1], "meaning": "MADRS greater than normal cutoff"},
+    {"pattern": "\\bMADRS\\b[^\\n;|]{0,40}(?:>=|>|score\\s*>?=?)\\s*(?:7|8|9|1[0-9])\\b", "codes": [3, 2, 1], "meaning": "MADRS at least mild threshold"},
+    {"pattern": "\\bBDI(?:-?II)?\\b[^\\n;|]{0,40}(?:>=|>|score\\s*>?=?)\\s*(?:29|3[0-9]|4[0-9]|5[0-9])\\b", "codes": [3], "meaning": "BDI severe threshold"},
+    {"pattern": "\\bBDI(?:-?II)?\\b[^\\n;|]{0,40}>\\s*19\\b", "codes": [3, 2], "meaning": "BDI greater than mild cutoff"},
+    {"pattern": "\\bBDI(?:-?II)?\\b[^\\n;|]{0,40}(?:>=|>|score\\s*>?=?)\\s*(?:20|2[0-8])\\b", "codes": [3, 2], "meaning": "BDI at least moderate threshold"},
+    {"pattern": "\\bBDI(?:-?II)?\\b[^\\n;|]{0,40}>\\s*13\\b", "codes": [3, 2, 1], "meaning": "BDI greater than minimal cutoff"},
+    {"pattern": "\\bBDI(?:-?II)?\\b[^\\n;|]{0,40}(?:>=|>|score\\s*>?=?)\\s*(?:14|15|16|17|18|19)\\b", "codes": [3, 2, 1], "meaning": "BDI at least mild threshold"}
+  ],
+  "unmapped_rule": "If no phrase or scale rule maps cleanly, preserve the original severity text."
+}

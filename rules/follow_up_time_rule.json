@@ -1,0 +1,11 @@
+{
+  "target_unit": "months",
+  "precision": 2,
+  "conversion": {
+    "weeks_per_month": 4.0,
+    "months_per_year": 12.0,
+    "days_per_month": 30.0
+  },
+  "range_policy": "if a range is given, keep the upper bound",
+  "multi_value_policy": "if multiple follow-up values remain, keep the latest or largest duration"
+}

@@ -1,0 +1,11 @@
+{
+  "codes": {
+    "1": "Pregnant or postpartum",
+    "2": "Substance misuse",
+    "3": "HIV-related",
+    "4": "Low-income or major socioeconomic disadvantage",
+    "5": "Other disease/comorbidity",
+    "6": "Other social-status context"
+  },
+  "multi_hit_storage": "store matched unique codes in ascending order as a list string"
+}

@@ -1,0 +1,7 @@
+{
+  "stored_as": "[A,B,C,D,E,F]",
+  "column": "Ethnicity [A=<label>,B=<label>,C=<label>,D=<label>,E=<label>,F=<label>]",
+  "precision": 2,
+  "code_source": "rules/ethnicity_codebook.csv",
+  "ranking_rule": "Assign A-F to the six most frequent deduplicated normalized ethnicity labels in the current dataset."
+}
